@@ -73,3 +73,15 @@ sudoku.c:176:23: error: implicit declaration of function 'nextList' [-Werror=imp
                        ^~~~~~~~
 cc1.exe: all warnings being treated as errors
 e1bfec4
+Sun, Oct  5, 2025  4:05:27 PM: 
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:172:29: error: implicit declaration of function 'firstList' [-Werror=implicit-function-declaration]
+         Node* aux = (Node*) firstList(adj);
+                             ^~~~~~~~~
+sudoku.c:176:23: error: implicit declaration of function 'nextList' [-Werror=implicit-function-declaration]
+         aux = (Node*) nextList(adj);
+                       ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+8044d33
