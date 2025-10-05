@@ -169,11 +169,11 @@ Node* DFS(Node* n, int* cont)
         if (is_final(actual)) return actual;
 
         List* adj = get_adj_nodes(actual);
-        Node* aux = (Node*) firstList(adj);
+        Node* aux = (Node*) first(adj);
         while (aux != NULL) 
         {
         push(pila, aux);
-        aux = (Node*) nextList(adj);
+        aux = (Node*) next(adj);
         }
 
         free(actual);
