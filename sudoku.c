@@ -169,7 +169,8 @@ Node* DFS(Node* n, int* cont)
         if (is_final(actual)) return actual;
 
         List* adj = get_adj_nodes(actual);
-        for (Node* aux = firstList(adj); aux != NULL; aux = nextList(adj)){
+        for (Node* aux = firstList(adj) ; aux != NULL ; aux = nextList(adj))
+        {
             push(pila, aux);
         }
 

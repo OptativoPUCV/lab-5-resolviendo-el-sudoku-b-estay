@@ -38,3 +38,24 @@ sudoku.c:172:59: error: assignment makes pointer from integer without a cast [-W
                                                            ^
 cc1.exe: all warnings being treated as errors
 4b39ef9
+Sun, Oct  5, 2025  4:00:22 PM: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:172:26: error: implicit declaration of function 'firstList' [-Werror=implicit-function-declaration]
+         for (Node* aux = firstList(adj) ; aux != NULL ; aux = nextList(adj))
+                          ^~~~~~~~~
+sudoku.c:172:26: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+sudoku.c:172:9: error: declaration of non-variable 'firstList' in 'for' loop initial declaration
+         for (Node* aux = firstList(adj) ; aux != NULL ; aux = nextList(adj))
+         ^~~
+sudoku.c:172:63: error: implicit declaration of function 'nextList' [-Werror=implicit-function-declaration]
+         for (Node* aux = firstList(adj) ; aux != NULL ; aux = nextList(adj))
+                                                               ^~~~~~~~
+sudoku.c:172:61: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+         for (Node* aux = firstList(adj) ; aux != NULL ; aux = nextList(adj))
+                                                             ^
+cc1.exe: all warnings being treated as errors
+1b93ccd
